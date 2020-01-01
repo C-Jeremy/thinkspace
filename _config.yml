@@ -4,7 +4,7 @@ title_right   : "Côté" # default: ""
 description   : "Scientific and mathematical essays for the curious."
 keywords      : "Science, mathematics, physics, education, academia"
 url           : https://C-Jeremy.github.io/ # site url
-baseurl       : "/thinkspace" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+baseurl       : "thinkspace" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-XXXXX-XX
