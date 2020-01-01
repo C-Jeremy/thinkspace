@@ -6,6 +6,7 @@ keywords      : "Science, mathematics, physics, education, academia"
 url           : https://C-Jeremy.github.io/ # site url
 baseurl       : "thinkspace" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
+date_format   : "%b %-d, %Y"
 
 google_analytics  : UA-XXXXX-XX
 twitter_username  : ""
@@ -14,9 +15,10 @@ disqus_shortname  : ""
 postshare_enabled : false
 
 # Build settings
-permalink   : /:year/:title/
+permalink   : pretty
 markdown    : kramdown
 highlighter : rouge
+paginate    : 4
 
 source      : ./
 destination : ./_site
@@ -41,5 +43,10 @@ navbar:
     title: About
   - slug : blog
     title: Blog
+
+text:
+  pagination:
+    newer: 'To the present'
+    older: 'To the past'
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script", "vendor"]
