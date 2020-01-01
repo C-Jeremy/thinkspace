@@ -157,6 +157,9 @@ hr {
     @extend .pull-right;
   }
 
+  .blog-title {
+    font-family: $heading-font-family;
+  }
 }
 
 .post-meta {
