@@ -6,28 +6,6 @@ title: Home
 
 {% include intro.html %}
 
-{% assign posts_count = (paginator.posts | size) %}
-
-<div class="home">
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.content }}
-            {% endif %}
-          </span>      
-          {% endfor %}
-    </div>
-    
-    {% include pagination.html %}
-
-</div>
-
 <section class="post-list">
   <div class="container">
     {% for post in site.posts %}
@@ -40,11 +18,13 @@ title: Home
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
         {% endif %}
       {% endunless %}
+	<span class="post-summary">
+              {{ post.content }}
+        </span>     
       <article class="post-item">
         <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
         <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
       </article>
-	{{ post.content }}
     {% endfor %}
   </div>
 
