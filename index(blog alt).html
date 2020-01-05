@@ -1,0 +1,21 @@
+---
+layout: default
+title: Home
+---
+
+<section class="post-list">
+  <div class="container">
+    {% for post in paginator.posts %} 
+      <article class="post-item">
+        <div class="blog-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"><h1 class="page-title">{{ post.title }}</h1></a></div>
+        <span class="post-meta blog-date-label">{{ post.date | date: '%b %d %Y' }}</span>
+      </article>
+      <span class="post-content">
+        {{ post.content }}
+      </span>  
+    {% endfor %}
+	
+    {% include paginationalt.html %}
+  </div>
+
+</section>
