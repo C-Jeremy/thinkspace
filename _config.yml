@@ -18,7 +18,7 @@ postshare_enabled : false
 permalink   : pretty
 markdown    : kramdown
 highlighter : rouge
-paginate    : 4
+paginate    : 10
 
 source      : ./
 destination : ./_site
