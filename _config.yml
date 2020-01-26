@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "Jeremy Côté"
-title_right   : "" # default: ""
+title_left    : ""
+title_right   : "Jeremy Côté" # default: ""
 description   : "Scientific and mathematical essays for the curious."
 keywords      : "Science, mathematics, physics, education, academia"
 url           : https://C-Jeremy.github.io/ # site url
