@@ -231,7 +231,7 @@ hr {
 
 .site-footer {
   @extend .clearfix;
-
+  font-family: $heading-font-family;
   padding: $base-spacing 0;
 
   a {
