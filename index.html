@@ -7,7 +7,7 @@ title: Home
 
 <section class="post-list">
   <div class="container">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       {% unless post.next %}
         <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
       {% else %}
@@ -22,6 +22,7 @@ title: Home
         <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
       </article>
     {% endfor %}
+{% include paginationalt.html %}
   </div>
 
 </section>
