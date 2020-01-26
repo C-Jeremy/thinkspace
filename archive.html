@@ -5,8 +5,8 @@ title: Archive
 
 
 <section class="post-list">
-  <p> The full collection of blog posts, organized chronologically. </p>
   <div class="container">
+    <p> The full collection of blog posts, organized chronologically. </p>
     {% for post in site.posts %}
       {% unless post.next %}
         <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
